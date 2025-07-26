@@ -1,0 +1,46 @@
+.job-card {
+  margin-bottom: 16px;
+  border-left: 4px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.job-card.pinned {
+  border-left-color: #1976d2;
+  background-color: #e3f2fd;
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status-tag.applied {
+  background-color: #e0e0e0;
+  color: #424242;
+}
+
+.status-tag.interview {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.status-tag.offer {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.status-tag.rejected {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
