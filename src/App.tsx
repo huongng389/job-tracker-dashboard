@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import JobCard from './components/JobCard';
 import type { Job } from './utils/types';
+import JobList from './features/JobList';
 
 const mockJobs: Job[] = [
   {
@@ -44,9 +44,7 @@ function App() {
     <>
       <div className="container">
         <h1>Job tracker</h1>
-        {jobs.map((job) => (
-          <JobCard key={job.id} job={job} onTogglePin={handleTogglePin} />
-        ))}
+        <JobList jobs={jobs} ontogglePin={handleTogglePin} />
       </div>
     </>
   );
